@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@500&display=swap');
+
+body {
+    font-family: 'Cormorant SC', serif;
+    color: #F3F1FF;
+}
+
+.container {
+    background-color: #FFFFFF;
+    width: 870px;
+    padding: 30px;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+}
+
+.players {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 30px;
+}
+
+.player img {
+    width: 56px;
+    height: 56px;
+}
+
+.player-name {
+    margin left: 16px;
+
+}
