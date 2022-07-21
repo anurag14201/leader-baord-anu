@@ -96,35 +96,46 @@ main {
     text-decoration: none;
 }
 
-/* Lates-course */
-.lates-course {
+/*---------------
+ Courses-style 
+ ---------------*/
+.courses {
     display: grid;
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 24px;
+
 }
 
-.lates {
-    display: flex;
-}
-
-.lates img {
+.course .course-banner img {
     width: 224px;
     height: 104px;
+
 }
 
-.stars {
-    font-size: 12px;
+.course-info {
     display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .fa-star.faild {
-    color: #FFC014
+    color: #FFC014;
+    font-size: 12px;
 }
 
 .fa-star.unfaild {
     color: #AEAEAE;
+    font-size: 12px;
 }
 
-.hour {
-    width: 21px;
-    height: 22px;
+.course-duration {
+    background-color: #FFE4E8;
+    border-radius: 14px;
 }
+
+/*-------------- 
+Meadia Quaries *
+---------------/
+
+/* Modile phone */
+@media only screen and (max-width:688px; ) {}
