@@ -128,9 +128,16 @@ main {
     font-size: 12px;
 }
 
+.padpad {
+    padding-left: 20px;
+}
+
 .course-duration {
-    background-color: #FFE4E8;
+    background-color: #ffe3e8;
     border-radius: 14px;
+    padding-right: 40px;
+    border: 1px solid hwb(351 89% 0%);
+    text-decoration: none;
 }
 
 /*-------------- 
@@ -138,4 +145,41 @@ Meadia Quaries *
 ---------------/
 
 /* Modile phone */
-@media only screen and (max-width:688px; ) {}
+@media only screen and (max-width:688px) {
+    .container {
+        background-color: skyblue;
+        width: 100%;
+    }
+
+    .players,
+    .blogs,
+    .courses {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .player,
+    .blog,
+    .course {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media only screen and (min-width:688px) and (max-width:992px) {
+    .container {
+        background-color: rgb(255, 0, 183);
+        width: 100%;
+    }
+
+    .players,
+    .courses {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .player,
+    .courses {
+        flex-direction: column;
+        align-items: center;
+    }
+}
